@@ -1,0 +1,190 @@
+.solutionWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.whiteBlock {
+  height: 120px;
+  width: 100vw;
+}
+.solution-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 650px;
+  width: 100vw;
+  background-image: url("../../images/solutions/background.svg");
+  background-position: center center;
+  gap: 100px;
+}
+.animatedSolutionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 650px;
+  width: 100vw;
+  background-position: center center;
+  gap: 100px;
+}
+
+/*height: 650px; finally*/
+
+.animatedFullRing {
+  position: absolute;
+  height: 1600px;
+  width: 1900px;
+  animation-name: rotateAndScaleAnimation;
+  animation-duration: 0.3s;
+  animation-timing-function: cubic-bezier(.17,.67,1,1);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotateAndScaleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(43deg);
+    height: 600px;
+    width: 600px;
+  }
+  100% {
+    transform: rotate(43deg);
+    height: 650px;
+    width: 650px;
+  }
+
+}
+
+.backgroundImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 545px;
+  height: 471px;
+  margin-top: 100px;
+}
+
+.logo {
+  width: 206px;
+  height: 129px;
+}
+
+.leftRound {
+  align-self: flex-start;
+}
+.rightRound {
+  align-self: flex-end;
+}
+
+.textContainer {
+  text-align: center;
+  max-width: 900px;
+  font-size: 20px;
+  font-family: 'Sora';
+  margin-bottom: 13px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.whitBlock {
+  width: 100vw;
+  height: 100px;
+}
+
+.ringButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  font-family: Sora;
+  font-size: 20px;
+  font-weight: bold;
+}
+.ringButton:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.fullRingMobile {
+  display: none;
+}
+
+.contentForFirstRing {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  justify-content: flex-start;
+}
+
+.contentForSecondRing {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  justify-content: flex-start;
+}
+.firstRing {
+  align-self: flex-end;
+  width: 100%;
+}
+.contentForRingHeader {
+  padding-top: 10px;
+  font-family: Sora;
+  font-size: 18px;
+  font-weight: bold;
+}
+.contentForRingText {
+  font-family: Sora;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+
+@media (max-width : 450px) {
+  .solution-container {
+    background-image: none;
+  }
+  .fullRingMobile {
+    display: block;
+    position: absolute;
+    height: 386px;
+    width: 386px;
+    top: 70px;
+    left: 4px;
+  }
+  .logo {
+    height: 100px;
+    width: 112px;
+  }
+  .animatedFullRing {
+    opacity: 0;
+  }
+
+}

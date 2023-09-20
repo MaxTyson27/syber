@@ -1,0 +1,28 @@
+@import '../../sass/_vars'
+  
+.root
+  margin-bottom: 100px
+ 
+.row
+  display: flex
+  justify-content: center
+  column-gap: 30px
+
+.link
+  +button (50px , 180px, 55px)
+  font-weight: 700
+  column-gap: 15px
+  transition: all .3s
+  &:hover
+    +hover()
+
+.hover_bg
+  +hover_bg(50px)
+
+@media (max-width: 1239px)
+  .root
+    margin-bottom: 80px
+  .row
+    flex-direction: column
+    row-gap: 20px
+    align-items: center

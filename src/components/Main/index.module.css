@@ -1,0 +1,150 @@
+.mainWrapper {
+  position: relative;
+  background-image: url('../../images/main/background.png');
+  width: 100vw;
+  height: 850px;
+  display: flex;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 50px 160px 0 100px;
+}
+
+.menuButtons {
+  display: flex;
+  gap: 14px;
+}
+
+.logo {
+  width: 158px;
+  height: 40px;
+}
+
+.menuButtons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*width: 73px;*/
+  height: 48px;
+  background-color: black;
+  border-radius: 90px;
+  border: 1px solid #444444;
+  color: white;
+  font-size: 14px;
+  font-family: Sora;
+  line-height: 18px;
+  font-weight: 300;
+  padding: 15px;
+}
+
+
+
+
+.ring {
+  position: absolute;
+  width: 649px;
+  height: 510px;
+  left: 393px;
+}
+.slogan {
+  position: absolute;
+  top: 37%;
+  left: 22%;
+}
+.bigPolygon {
+  position: absolute;
+  width: 161px;
+  height: 168px;
+  left: 61%;
+  top: 15%;
+}
+.smallPolygon {
+  position: absolute;
+  width: 104px;
+  height: 109px;
+  left: 29%;
+  top: 12%;
+}
+
+@media (max-width : 1000px) {
+  .main-wrapper {
+    position: relative;
+    background-image: url('../../images/main/sloganMobile.png');
+    width: 100vw;
+    height: 850px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 185px 90px 0 100px;
+    height: 40%;
+  }
+
+  .menuButtons {
+    display: flex;
+    gap: 14px;
+  }
+
+  .logo {
+    width: 158px;
+    height: 40px;
+  }
+
+  .menuButtons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*width: 73px;*/
+    height: 48px;
+    background-color: black;
+    border-radius: 90px;
+    border: 1px solid #444444;
+    color: white;
+    font-size: 14px;
+    font-family: Sora;
+    line-height: 18px;
+    font-weight: 300;
+    padding: 15px;
+  }
+
+
+  .ring {
+    position: absolute;
+    width: 358px;
+    height: 339px;
+    top: 0;
+    left: 10%;
+  }
+  .slogan {
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    width: 358px;
+    height: 207px;
+  }
+  .bigPolygon {
+    position: absolute;
+    width: 103px;
+    height: 108px;
+    left: 84%;
+    top: 15%;
+  }
+  .smallPolygon {
+    position: absolute;
+    width: 75px;
+    height: 78px;
+    left: 2%;
+    top: 15%;
+  }
+
+}
